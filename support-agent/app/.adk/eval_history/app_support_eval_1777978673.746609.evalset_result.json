@@ -1,0 +1,407 @@
+{
+  "eval_set_result_id": "app_support_eval_1777978673.746609",
+  "eval_set_result_name": "app_support_eval_1777978673.746609",
+  "eval_set_id": "support_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "support_eval",
+      "eval_set_id": "support_eval",
+      "eval_id": "installation_test",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 0.0,
+          "criterion": {
+            "threshold": 0.0,
+            "match_type": "IN_ORDER"
+          },
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judge_model_options": {
+              "judge_model": "gemini-flash-latest"
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "hallucinations_v1",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-903095f7-0d9a-44e3-8a0b-1e68b8f06f17",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "How do I install the CLI?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "To install the CLI, you must first ensure you have Node.js version 18 or higher.\n\nThen, run the following command:\n\n`npm install -g @example/cli`\n\nTo verify the installation, you can run:\n\n`example-cli --version`\n\n(Source: installation.md)",
+                  "thought": null,
+                  "thought_signature": "CvECAY89a189CgOZKFxdyDnOgAEhm32JusA5nPP-TrOtga2HxRR550WclHWO46P9mLWK9Sexnp72gAj2Gab5GCVZeKekLqfxMWLatzgxWsPLVUgt-mCAsIywWtnQ6dWuEHNS2UMzkLjGnAt96fmD2xPbas1d5crukSlu1yF3EDht9sdnL5EBvaqEX9h-XPo8pq-fdkDP0f8Jw10R8DWbXtj72Qy6T_DUoqsf4WWgZuoFvq8cCwo3xOhsOcZTlVoYXf8KwhQqMHajznZkUcF2Enx4pQtUp956pStQrAAJgKQc1xrK6sBrvA8xOwcBFPxa3kiAFfxCUSbxWey_RwCNO9VtOHc6nO2I_l0xOH1zO6IVtwJNQ_pY4xpHUnJ-xQxaCZme37r18tBD7wOGbPoqILqiKVwHVZaGpCck8btBgr51DAHxISXEmjiMrv5gpcRy0bEZoFLQSOSZ_9NKIawEMNxIMDZHtvvFmaboN19uzGj2gg2Q",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-d4c33cac-1a5b-4807-bf3b-d2c77eb1f223",
+                          "args": {
+                            "query": "install CLI"
+                          },
+                          "name": "retrieve_docs",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CtkBAY89a18FCaWzXQkFqSEHQKNt3lhAexuxS8IHGi40WipXi3E3b-NHl8oW0DKrruewTRHY3fAEAba0bfk8Xef5kpuhciUu444-OmbEF1aFeZ775Fg0GN3PYhx07fKd2na0nAX1FyBkFZfJ466ZOp3qIK31H_e2uJCuRjoPBI1mLQDdkNNO4y-pIND2ceTkBUAM_rZRnF5hVwhBVFyT2zv4_v5etMGc8_T3SziNzuRqD2VLSuZ36elsmC1cIMlFCGPNMi9ZS7TvY6aqMJGad-fikL_TmBwH9oVp4Q==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-d4c33cac-1a5b-4807-bf3b-d2c77eb1f223",
+                          "name": "retrieve_docs",
+                          "response": {
+                            "result": "## Context provided:\n<Document 0>\n# installation.md\n# Installation Guide\nTo install the CLI, you must have Node.js version 18 or higher.\nRun the following command:\n`npm install -g @example/cli`\nTo verify the installation:\n`example-cli --version`\n</Document 0>\n<Document 1>\n# troubleshooting.md\n# Troubleshooting\n## Connection Errors\nIf you see a \"Connection Refused\" error, check your internet connection and ensure that you are not behind a restrictive firewall.\n## Authentication Failed\nEnsure that your API key is correctly set in your environment variables as `EXAMPLE\\_API\\_KEY`.\n</Document 1>"
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1777978650.683907,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are a technical support agent. Your primary goal is to answer technical questions based EXCLUSIVELY on the provided documentation.\n\nRules:\n1. Grounding: Answer ONLY using the information retrieved from the Tools. Do not use external knowledge.\n2. Source Citations: Always include the source file name in your response (e.g., \"(Source: installation.md)\").\n3. Strict Relevance: If a question is NOT about technical support or if the answer is not in the documentation, politely inform the user that you can only assist with technical questions related to the documentation.\n4. Tone: Be professional, helpful, and concise.\n\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "\nUseful for retrieving relevant documents based on a query.\nUse this when you need additional information to answer a question.\n\nArgs:\n    query (str): The user's question or search query.\n\nReturns:\n    str: Formatted string containing relevant document content.\n",
+                          "name": "retrieve_docs",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "query": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "query"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "How do I install the CLI?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "To install the CLI, run `npm install -g @example/cli`. (Source: installation.md)",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "query": "How do I install the CLI?"
+                  },
+                  "name": "retrieve_docs",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 0.0,
+              "criterion": {
+                "threshold": 0.0,
+                "match_type": "IN_ORDER"
+              },
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judge_model_options": {
+                  "judge_model": "gemini-flash-latest"
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "hallucinations_v1",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": []
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___5024ab47-3c64-4d34-ac96-1361bafc932f",
+      "session_details": null,
+      "user_id": "test_user_id"
+    }
+  ],
+  "creation_timestamp": 1777978673.746609
+}
