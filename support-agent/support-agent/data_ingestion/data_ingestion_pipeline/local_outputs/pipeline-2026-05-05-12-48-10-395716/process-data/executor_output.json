@@ -1,1 +1,0 @@
-{"artifacts": {"output_table": {"artifacts": [{"name": "output_table", "uri": "bq://adk-bigquery.support_agent_qa_data.questions_embeddings", "metadata": {"projectId": "adk-bigquery", "datasetId": "support_agent_qa_data", "tableId": "questions_embeddings"}}]}}}
