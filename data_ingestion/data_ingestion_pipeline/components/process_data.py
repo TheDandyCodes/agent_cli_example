@@ -126,8 +126,8 @@ def process_data(
         import os
         import pandas as pd
         
-        # Use absolute path to ensure files are found
-        docs_dir = "/Users/ricardoprietoalvarez/Coding/agent_cli_example/docs"
+        # Use relative path to ensure files are found in CI/CD environment
+        docs_dir = "../../docs"
         data = []
         
         if os.path.exists(docs_dir):
