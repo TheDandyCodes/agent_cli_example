@@ -63,6 +63,16 @@ resource "google_cloud_run_v2_service" "app" {
         name  = "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT"
         value = "NO_CONTENT"
       }
+
+      env {
+        name = "TELEGRAM_BOT_TOKEN"
+        value_from {
+          secret_key_ref {
+            secret = "projects/369128005015/secrets/telegram-bot-token" # Use the full secret path
+            version = "latest"
+          }
+        }
+      }
     }
 
     service_account                = google_service_account.app_sa[each.key].email
